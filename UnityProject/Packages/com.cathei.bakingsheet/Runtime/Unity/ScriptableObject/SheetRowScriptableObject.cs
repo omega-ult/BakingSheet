@@ -46,7 +46,8 @@ namespace Cathei.BakingSheet.Unity
         {
             if (_row == null)
                 return;
-
+                
+            references ??= new List<UnityEngine.Object>();
             serializedRow = SerializeRow(_row, references);
         }
 
