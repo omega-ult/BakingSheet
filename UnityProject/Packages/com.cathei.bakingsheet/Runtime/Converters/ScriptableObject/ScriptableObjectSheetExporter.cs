@@ -1,4 +1,4 @@
-﻿// BakingSheet, Maxwell Keonwoo Kang <code.athei@gmail.com>, 2022
+// BakingSheet, Maxwell Keonwoo Kang <code.athei@gmail.com>, 2022
 
 #if UNITY_EDITOR
 
@@ -101,7 +101,7 @@ namespace Cathei.BakingSheet.Unity
 
                         string rowIdStr = rowSO.name;
 
-                        existingRowSO.Add(rowIdStr, rowSO);
+                        existingRowSO.TryAdd(rowIdStr, rowSO);
                     }
 
                     sheetSO.Clear();
